@@ -24,23 +24,23 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 var exec = require('cordova/exec');
 
-function FileOpenerPDL() {}
+function FileOpener2() {}
 
-FileOpenerPDL.prototype.open = function (fileName, contentType, callbackContext) {
+FileOpener2.prototype.open = function (fileName, contentType, callbackContext) {
     contentType = contentType || '';
     callbackContext = callbackContext || {};
-    exec(callbackContext.success || null, callbackContext.error || null, 'FileOpenerPDL', 'open', [fileName, contentType]);
+    exec(callbackContext.success || null, callbackContext.error || null, 'FileOpener2', 'open', [fileName, contentType]);
 };
 
-FileOpenerPDL.prototype.showOpenWithDialog = function (fileName, contentType, callbackContext) {
+FileOpener2.prototype.showOpenWithDialog = function (fileName, contentType, callbackContext) {
     contentType = contentType || '';
     callbackContext = callbackContext || {};
-    exec(callbackContext.success || null, callbackContext.error || null, 'FileOpenerPDL', 'open', [fileName, contentType, false, callbackContext.position || [0, 0]]);
+    exec(callbackContext.success || null, callbackContext.error || null, 'FileOpener2', 'open', [fileName, contentType, false, callbackContext.position || [0, 0]]);
 };
 
-FileOpenerPDL.prototype.appIsInstalled = function (packageId, callbackContext) {
+FileOpener2.prototype.appIsInstalled = function (packageId, callbackContext) {
     callbackContext = callbackContext || {};
-    exec(callbackContext.success || null, callbackContext.error || null, 'FileOpenerPDL', 'appIsInstalled', [packageId]);
+    exec(callbackContext.success || null, callbackContext.error || null, 'FileOpener2', 'appIsInstalled', [packageId]);
 };
 
-module.exports = new FileOpenerPDL();
+module.exports = new FileOpener2();

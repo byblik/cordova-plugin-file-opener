@@ -28,7 +28,7 @@ Here is the output:
 
 #### Plugin version
 
-    cordova plugin version | grep cordova-plugin-file-opener-pdl
+    cordova plugin version | grep cordova-plugin-file-opener2
 
 Here is the output:
 

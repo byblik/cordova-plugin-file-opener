@@ -18,7 +18,7 @@
  * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package com.pdl.cordova.fileopenerpdl;
+package com.pdl.cordova.fileopener2;
 
 import android.content.Context;
 import android.content.Intent;
@@ -36,7 +36,7 @@ import org.json.JSONObject;
 
 import java.io.File;
 
-public class FileOpenerPDL extends CordovaPlugin {
+public class FileOpener2 extends CordovaPlugin {
 
     /**
      * Executes the request and returns a boolean.
